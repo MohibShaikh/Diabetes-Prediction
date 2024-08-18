@@ -95,7 +95,7 @@ def main():
     # Fit the model
     model.fit(X_train_scaled, Y_train)
     y_pred_train = model.predict(X_test_scaled)
-    train_accuracy = accuracy_score(y_pred_train,Y_test)
+    train_accuracy = accuracy_score(y_pred_train,Y_test) x 100
     # Train button
     if st.button('Train Model'):
         st.success(f'Model trained successfully! Train Accuracy: {train_accuracy:.f}')
