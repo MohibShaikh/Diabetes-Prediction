@@ -98,7 +98,7 @@ def main():
     train_accuracy = accuracy_score(y_pred_train,Y_test)
     # Train button
     if st.button('Train Model'):
-        st.success(f'Model trained successfully! Train Accuracy: {train_accuracy:.2f}')
+        st.success(f'Model trained successfully! Train Accuracy: {train_accuracy{train_accuracy * 100:.2f}%')
 
     # Predict button
     if st.button('Predict'):
